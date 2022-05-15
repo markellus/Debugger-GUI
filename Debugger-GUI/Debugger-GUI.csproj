@@ -12,12 +12,11 @@
     <BaseIntermediateOutputPath>..\obj\</BaseIntermediateOutputPath>
     <MSBuildProjectExtensionsPath>..\obj\</MSBuildProjectExtensionsPath>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-    <StartupObject>Debugger.App</StartupObject>
+    <StartupObject>Debugger.Source.App</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="src\" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

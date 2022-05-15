@@ -1,0 +1,6 @@
+<Project>
+ <PropertyGroup>
+   <Deterministic>true</Deterministic>
+   <ImportProjectExtensionProps>false</ImportProjectExtensionProps>
+ </PropertyGroup>
+</Project>

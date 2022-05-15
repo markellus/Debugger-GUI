@@ -29,7 +29,7 @@ namespace Debugger.Source.Connector
     /// </summary>
     public static class ConsoleEx
     {
-        #region Private Member Variables
+        #region Private Fields
 
         private static readonly Thread _threadCtrlEventSender;
         private static readonly Queue<Func<bool>> _queueCtrlJobs;
@@ -38,7 +38,7 @@ namespace Debugger.Source.Connector
 
         #endregion
 
-        #region DLL imports
+        #region DLL Imports
 
         [DllImport("kernel32.dll")]
         private static extern bool GenerateConsoleCtrlEvent(uint dwCtrlEvent, uint dwProcessGroupId);
@@ -82,7 +82,7 @@ namespace Debugger.Source.Connector
         /// the event.</exception>
         public static void SendConsoleCtrlEvent(EnumConsoleCtrlEvent enumEvent, uint uiPid)
         {
-            object _cndWait = new object();
+            object _cndWait = new();
 
             lock (_cndWait)
             {
